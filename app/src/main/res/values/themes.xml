@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme with Material3 & Tranquil Brown Palette -->
+    <style name="Base.Theme.Moddy" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Brand Colors -->
+        <item name="colorPrimary">@color/brown_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/brown_accent_chip</item>
+        <item name="colorOnPrimaryContainer">@color/brown_text_primary</item>
+        <item name="colorSecondary">@color/brown_secondary</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/brown_surface_variant</item>
+        <item name="colorOnSecondaryContainer">@color/brown_text_primary</item>
+
+        <!-- System & Window Backgrounds -->
+        <item name="android:colorBackground">@color/cream_background</item>
+        <item name="colorSurface">@color/cream_card</item>
+        <item name="colorSurfaceVariant">@color/brown_surface_variant</item>
+        <item name="colorOnSurface">@color/brown_text_primary</item>
+        <item name="colorOnSurfaceVariant">@color/brown_text_secondary</item>
+
+        <!-- Status Bar -->
+        <item name="android:statusBarColor">@color/cream_background</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/cream_background</item>
+    </style>
+
+    <style name="Theme.Moddy" parent="Base.Theme.Moddy" />
+</resources>

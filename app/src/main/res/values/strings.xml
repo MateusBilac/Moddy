@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Moddy</string>
+
+    <!-- Navigation -->
+    <string name="nav_today">Hoje</string>
+    <string name="nav_habits">Hábitos</string>
+    <string name="nav_history">Histórico</string>
+    <string name="nav_settings">Ajustes</string>
+
+    <!-- Today Screen -->
+    <string name="today_greeting">Olá! Como está seu dia?</string>
+    <string name="today_subtitle">Acompanhe seu humor e hábitos diários</string>
+    <string name="mood_question">Como você está se sentindo hoje?</string>
+    <string name="mood_excellent">Excelente</string>
+    <string name="mood_good">Bem</string>
+    <string name="mood_neutral">Neutro</string>
+    <string name="mood_tired">Cansado</string>
+    <string name="mood_sad">Chateado</string>
+    <string name="mood_select_prompt">Toque para registrar seu humor hoje</string>
+    <string name="progress_title">Progresso Diário</string>
+    <string name="progress_empty">0 de 0 hábitos concluídos hoje</string>
+    <string name="today_habits_section">Hábitos de Hoje</string>
+    <string name="empty_today_habits_title">Nenhum hábito cadastrado</string>
+    <string name="empty_today_habits_desc">Toque no botão "+" para adicionar seus hábitos diários e começar a acompanhar sua rotina.</string>
+    <string name="add_habit_button">Criar Novo Hábito</string>
+
+    <!-- Habits Screen -->
+    <string name="habits_title">Meus Hábitos</string>
+    <string name="habits_subtitle">Gerencie suas rotinas diárias</string>
+    <string name="filter_all">Todos</string>
+    <string name="filter_active">Ativos</string>
+    <string name="filter_archived">Arquivados</string>
+    <string name="empty_habits_title">Sua lista de hábitos está vazia</string>
+    <string name="empty_habits_desc">Cadastre novos hábitos como beber água, exercitar-se ou ler para acompanhar sua evolução diária.</string>
+
+    <!-- Content Descriptions & Accessibility -->
+    <string name="desc_check_habit">Marcar hábito como concluído</string>
+    <string name="desc_edit_habit">Editar hábito</string>
+    <string name="desc_delete_habit">Excluir hábito</string>
+
+    <!-- New / Edit Habit Dialog -->
+    <string name="new_habit_title">Novo Hábito</string>
+    <string name="edit_habit_title">Editar Hábito</string>
+    <string name="habit_name_hint">Nome do hábito (ex: Beber 2L de água)</string>
+    <string name="habit_category_hint">Categoria (ex: Saúde, Estudo, Lazer)</string>
+    <string name="habit_reminder_time">Horário do lembrete</string>
+    <string name="btn_save">Salvar Hábito</string>
+    <string name="btn_cancel">Cancelar</string>
+
+    <!-- History Screen -->
+    <string name="history_title">Histórico &amp; Evolução</string>
+    <string name="history_subtitle">Acompanhe suas oscilações de humor e hábitos</string>
+    <string name="selected_date_details">Detalhes do Dia</string>
+    <string name="no_entry_date">Sem registros para esta data</string>
+    <string name="retroactive_limit_note">Nota: Registros podem ser alterados em até 7 dias anteriores.</string>
+    <string name="weekly_summary_title">Resumo Semanal</string>
+    <string name="weekly_summary_desc">Registre seus hábitos durante a semana para visualizar gráficos e métricas de consistência.</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">Configurações</string>
+    <string name="settings_subtitle">Personalize suas preferências do Moddy</string>
+    <string name="notifications_section">Notificações</string>
+    <string name="daily_reminder_title">Lembretes Diários</string>
+    <string name="daily_reminder_desc">Receber notificações para marcar hábitos pendentes</string>
+    <string name="reminder_time_title">Horário da Notificação</string>
+    <string name="app_info_section">Sobre o Aplicativo</string>
+    <string name="app_version">Moddy v1.0 - Versão Tranquila</string>
+    <string name="app_description">O Moddy ajuda você a acompanhar seus hábitos e humor com simplicidade e serenidade.</string>
+</resources>

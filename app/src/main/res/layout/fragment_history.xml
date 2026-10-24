@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream_background"
+    android:fillViewport="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/history_title"
+            android:textColor="@color/brown_text_primary"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/history_subtitle"
+            android:textColor="@color/brown_text_secondary"
+            android:textSize="14sp" />
+
+        <!-- Calendar Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/cream_card"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            app:strokeColor="@color/divider_color"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <CalendarView
+                    android:id="@+id/calendar_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusedMonthDateColor="@color/brown_primary"
+                    android:selectedWeekBackgroundColor="@color/brown_accent_chip"
+                    android:weekNumberColor="@color/brown_secondary" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Rule Note Banner -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardBackgroundColor="@color/brown_accent_chip"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="@string/retroactive_limit_note"
+                android:textColor="@color/brown_text_secondary"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Date Detail Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_selected_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/cream_card"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            app:strokeColor="@color/divider_color"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tv_selected_date_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/selected_date_details"
+                    android:textColor="@color/brown_text_primary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_date_mood_summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/no_entry_date"
+                    android:textColor="@color/brown_text_secondary"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Weekly Summary Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/cream_card"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            app:strokeColor="@color/divider_color"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/weekly_summary_title"
+                    android:textColor="@color/brown_text_primary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/weekly_summary_desc"
+                    android:textColor="@color/brown_text_secondary"
+                    android:textSize="13sp" />
+
+                <!-- Serene Placeholder Bar Visualizer for Weekly Progress -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="bottom|center_horizontal"
+                    android:orientation="horizontal">
+
+                    <!-- Day 1 Bar -->
+                    <View
+                        android:layout_width="16dp"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="12dp"
+                        android:background="@drawable/bg_mood_selected" />
+
+                    <!-- Day 2 Bar -->
+                    <View
+                        android:layout_width="16dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="12dp"
+                        android:background="@drawable/bg_mood_selected" />
+
+                    <!-- Day 3 Bar -->
+                    <View
+                        android:layout_width="16dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="12dp"
+                        android:background="@drawable/bg_mood_unselected" />
+
+                    <!-- Day 4 Bar -->
+                    <View
+                        android:layout_width="16dp"
+                        android:layout_height="65dp"
+                        android:layout_marginEnd="12dp"
+                        android:background="@drawable/bg_mood_selected" />
+
+                    <!-- Day 5 Bar -->
+                    <View
+                        android:layout_width="16dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="12dp"
+                        android:background="@drawable/bg_mood_selected" />
+
+                    <!-- Day 6 Bar -->
+                    <View
+                        android:layout_width="16dp"
+                        android:layout_height="15dp"
+                        android:layout_marginEnd="12dp"
+                        android:background="@drawable/bg_mood_unselected" />
+
+                    <!-- Day 7 Bar -->
+                    <View
+                        android:layout_width="16dp"
+                        android:layout_height="55dp"
+                        android:background="@drawable/bg_mood_selected" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
