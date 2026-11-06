@@ -147,62 +147,15 @@
                     android:textColor="@color/brown_text_secondary"
                     android:textSize="13sp" />
 
-                <!-- Serene Placeholder Bar Visualizer for Weekly Progress -->
+                <!-- Dynamic Weekly Summary Container -->
                 <LinearLayout
+                    android:id="@+id/layout_weekly_bars"
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:gravity="bottom|center_horizontal"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal" />
 
-                    <!-- Day 1 Bar -->
-                    <View
-                        android:layout_width="16dp"
-                        android:layout_height="30dp"
-                        android:layout_marginEnd="12dp"
-                        android:background="@drawable/bg_mood_selected" />
-
-                    <!-- Day 2 Bar -->
-                    <View
-                        android:layout_width="16dp"
-                        android:layout_height="50dp"
-                        android:layout_marginEnd="12dp"
-                        android:background="@drawable/bg_mood_selected" />
-
-                    <!-- Day 3 Bar -->
-                    <View
-                        android:layout_width="16dp"
-                        android:layout_height="20dp"
-                        android:layout_marginEnd="12dp"
-                        android:background="@drawable/bg_mood_unselected" />
-
-                    <!-- Day 4 Bar -->
-                    <View
-                        android:layout_width="16dp"
-                        android:layout_height="65dp"
-                        android:layout_marginEnd="12dp"
-                        android:background="@drawable/bg_mood_selected" />
-
-                    <!-- Day 5 Bar -->
-                    <View
-                        android:layout_width="16dp"
-                        android:layout_height="40dp"
-                        android:layout_marginEnd="12dp"
-                        android:background="@drawable/bg_mood_selected" />
-
-                    <!-- Day 6 Bar -->
-                    <View
-                        android:layout_width="16dp"
-                        android:layout_height="15dp"
-                        android:layout_marginEnd="12dp"
-                        android:background="@drawable/bg_mood_unselected" />
-
-                    <!-- Day 7 Bar -->
-                    <View
-                        android:layout_width="16dp"
-                        android:layout_height="55dp"
-                        android:background="@drawable/bg_mood_selected" />
-                </LinearLayout>
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 

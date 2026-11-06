@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.example.moddy.databinding.DialogCreateHabitBinding;
-import com.example.moddy.model.Habit;
+import com.example.moddy.db.entity.HabitEntity;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 import java.util.Calendar;
@@ -20,15 +20,15 @@ import java.util.Locale;
 public class CreateHabitBottomSheetDialog extends BottomSheetDialogFragment {
 
     public interface OnHabitSaveListener {
-        void onHabitSaved(Habit habit);
+        void onHabitSaved(String title, String category, String time, HabitEntity editEntity);
     }
 
     private DialogCreateHabitBinding binding;
     private OnHabitSaveListener listener;
     private String selectedTime = "08:00";
-    private Habit habitToEdit = null;
+    private HabitEntity habitToEdit = null;
 
-    public static CreateHabitBottomSheetDialog newInstance(Habit habitToEdit) {
+    public static CreateHabitBottomSheetDialog newInstance(HabitEntity habitToEdit) {
         CreateHabitBottomSheetDialog dialog = new CreateHabitBottomSheetDialog();
         dialog.habitToEdit = habitToEdit;
         return dialog;
@@ -61,7 +61,6 @@ public class CreateHabitBottomSheetDialog extends BottomSheetDialogFragment {
         }
 
         binding.btnSelectTime.setOnClickListener(v -> showTimePicker());
-
         binding.btnCancelHabit.setOnClickListener(v -> dismiss());
 
         binding.btnSaveHabit.setOnClickListener(v -> {
@@ -78,16 +77,7 @@ public class CreateHabitBottomSheetDialog extends BottomSheetDialogFragment {
             }
 
             if (listener != null) {
-                if (habitToEdit != null) {
-                    habitToEdit.setTitle(title);
-                    habitToEdit.setCategory(category);
-                    habitToEdit.setTime(selectedTime);
-                    listener.onHabitSaved(habitToEdit);
-                } else {
-                    String id = String.valueOf(System.currentTimeMillis());
-                    Habit newHabit = new Habit(id, title, category, selectedTime);
-                    listener.onHabitSaved(newHabit);
-                }
+                listener.onHabitSaved(title, category, selectedTime, habitToEdit);
             }
             dismiss();
         });
