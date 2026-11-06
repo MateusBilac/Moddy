@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Rounded Background Circle/Badge -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M54,4 C26.386,4 4,26.386 4,54 C4,81.614 26.386,104 54,104 C81.614,104 104,81.614 104,54 C104,26.386 81.614,4 54,4 Z" />
+
+    <!-- Centered Light Brown Letter 'M' -->
+    <path
+        android:fillColor="@color/brown_primary"
+        android:pathData="M38,72 V36 H45 L54,54 L63,36 H70 V72 H63 V48 L55.5,63 H52.5 L45,48 V72 Z" />
+</vector>

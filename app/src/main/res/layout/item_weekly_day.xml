@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="0dp"
+    android:layout_height="140dp"
+    android:layout_weight="1"
+    android:gravity="bottom|center_horizontal"
+    android:orientation="vertical"
+    android:paddingHorizontal="2dp">
+
+    <!-- Mood Emoji for that day -->
+    <TextView
+        android:id="@+id/tv_day_mood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        tools:text="😊" />
+
+    <!-- Percentage Text -->
+    <TextView
+        android:id="@+id/tv_day_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/brown_text_secondary"
+        android:textSize="10sp"
+        tools:text="80%" />
+
+    <!-- Vertical Bar Background & Progress Fill -->
+    <FrameLayout
+        android:layout_width="16dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_mood_unselected">
+
+        <View
+            android:id="@+id/view_day_bar_fill"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_mood_selected" />
+    </FrameLayout>
+
+    <!-- Day Name (e.g. SEG, TER) -->
+    <TextView
+        android:id="@+id/tv_day_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/brown_text_primary"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        tools:text="SEG" />
+
+</LinearLayout>
